@@ -1,7 +1,3 @@
-import Image from "next/image";
-
-import { base_dir } from "./constants";
-
 export default function Home() {
   return (
     <main>
