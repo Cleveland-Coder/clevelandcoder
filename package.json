@@ -2,6 +2,7 @@
   "name": "clevelandcoder",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://cleveland-coder.github.io/clevelandcoder",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
