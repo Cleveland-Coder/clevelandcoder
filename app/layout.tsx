@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Open_Sans, Noto_Sans_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const openSans = Open_Sans({ subsets: ["latin"] });
+const notoSansMono = Noto_Sans_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +17,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+
+      <head>
+        <meta charSet="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="google-site-verification" content="L2ly-E-6uEJZofo1sBfqD-ul45ZZvvlcjYISh2Ckf5c" />
+        <title>Ra&#xFA;l Montejo | Web Developer</title>
+
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Open+Sans&display=swap" rel="stylesheet" />
+      </head>
+
+      <body className={[openSans.className, notoSansMono.className].join(' ')}>{children}</body>
+
     </html>
   );
 }
