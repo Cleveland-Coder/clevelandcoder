@@ -25,8 +25,6 @@ export default function RootLayout({
         <meta name="google-site-verification" content="L2ly-E-6uEJZofo1sBfqD-ul45ZZvvlcjYISh2Ckf5c" />
         <title>Ra&#xFA;l Montejo | Web Developer</title>
 
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-        
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Open+Sans&display=swap" rel="stylesheet" />
