@@ -63,7 +63,7 @@ body {
 
 /* main content */
 main {
-  font-family: "Open Sans", Tahoma, Helvetica, sans-serif;
+  font-family: var(--font-open-sans), Tahoma, Helvetica, sans-serif;
   height: 100vh;
   display: table-cell;
   vertical-align: middle;
@@ -73,7 +73,7 @@ main {
 
 /* Typography Styles */
 code {
-  font-family: "Noto Sans Mono", Nunito, Geneva, sans-serif;
+  font-family: var(--font-noto-sans-mono), Nunito, Geneva, sans-serif;
 }
 code span.tag {
   color: #DF5A55;

@@ -2,8 +2,16 @@ import type { Metadata } from "next";
 import { Open_Sans, Noto_Sans_Mono } from "next/font/google";
 import "./globals.css";
 
-const openSans = Open_Sans({ subsets: ["latin"] });
-const notoSansMono = Noto_Sans_Mono({ subsets: ["latin"] });
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  variable: '--font-open-sans',
+  display: 'swap',
+});
+const notoSansMono = Noto_Sans_Mono({
+  subsets: ["latin"],
+  variable: '--font-noto-sans-mono',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,7 +34,7 @@ export default function RootLayout({
         <title>Ra&#xFA;l Montejo | Web Developer</title>
       </head>
 
-      <body className={[openSans.className, notoSansMono.className].join(' ')}>{children}</body>
+      <body className={`${openSans.variable} ${notoSansMono.variable}`}>{children}</body>
 
     </html>
   );
