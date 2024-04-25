@@ -1,12 +1,12 @@
 export default function Home() {
   return (
     <main>
-      <h1>Ra&#xFA;l Montejo</h1>
+      <h1>Ra&#250;l Montejo</h1>
       <h2>Web Developer</h2>
       <code>
-        &lt;<span className="tag">portfolio</span>{" "}
-        <span className="attribute">data-upload-time</span>="
-        <span className="value">very soon</span>"&gt;
+        &#60;<span className="tag">portfolio</span>{" "}
+        <span className="attribute">data-upload-time</span>&#61;&#34;
+        <span className="value">very soon</span>&#34;&#62;
       </code>
     </main>
   );
