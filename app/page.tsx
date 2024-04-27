@@ -6,7 +6,7 @@ export default function Home() {
       <code>
         &#60;<span className="tag">portfolio</span>{" "}
         <span className="attribute">data-upload-time</span>&#61;&#34;
-        <span className="value">very soon</span>&#34;&#62;
+        <span className="value">soon</span>&#34;&#62;
       </code>
     </main>
   );
