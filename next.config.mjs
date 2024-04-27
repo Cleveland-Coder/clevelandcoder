@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/clevelandcoder",
+  basePath: "",
   output: "export",  // <=== enables static exports
 };
 
