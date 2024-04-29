@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Open_Sans, Noto_Sans_Mono } from "next/font/google";
+import { Libre_Caslon_Text, Noto_Sans_Mono } from "next/font/google";
 import "./globals.css";
 
-const openSans = Open_Sans({
-  subsets: ["latin"],
-  variable: '--font-open-sans',
+const libreCaslonText = Libre_Caslon_Text({
   display: 'swap',
+  subsets: ["latin"],
+  variable: '--font-libre-caslon-text',
+  weight: ['400', '700'],
 });
 const notoSansMono = Noto_Sans_Mono({
   subsets: ["latin"],
@@ -34,7 +35,7 @@ export default function RootLayout({
         <title>Ra&#xFA;l Montejo | Web Developer</title>
       </head>
 
-      <body className={`${openSans.variable} ${notoSansMono.variable}`}>{children}</body>
+      <body className={`${libreCaslonText.variable} ${notoSansMono.variable}`}>{children}</body>
 
     </html>
   );

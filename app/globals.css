@@ -63,7 +63,7 @@ body {
 
 /* main content */
 main {
-  font-family: var(--font-open-sans), Tahoma, Helvetica, sans-serif;
+  font-family: var(--font-libre-caslon-text), Tahoma, Helvetica, sans-serif;
   height: 100vh;
   display: table-cell;
   vertical-align: middle;
