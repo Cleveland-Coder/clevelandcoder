@@ -1,0 +1,21 @@
+name: Raúl Montejo
+title: Software Developer
+address: 2619 Princeton Rd, Cleveland Heights, OH 44118-4313 United States
+phone: +1 216-526-6355
+email: raul@clevelandcoder.com
+sections:
+  - title: Experience
+    items:
+      - job_title: Software Developer
+        company: Cleveland Coder
+        location: Cleveland, OH
+        date: 2020 - Present
+        content:
+          - >
+            I am a software developer with experience in web development, 
+            mobile development, and backend development.
+          - >
+            I have a strong background in computer science and I am passionate 
+            about technology. I am always looking for new challenges and 
+            opportunities to learn new things.
+  - title: Education
