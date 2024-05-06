@@ -29,7 +29,6 @@ export interface Job {
 export interface School {
   id: string;
   degree: string;
-  experiences: string[];
   grad_date: string;
   institution: string;
   location: string;
