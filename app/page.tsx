@@ -20,7 +20,7 @@ export default function Home() {
     <>
       <header className="flex flex-col mt-12 text-center">
         <h1 className="text-4xl sm:text-5xl font-bold">{name}</h1>
-        <h2 className="mt-4 text-xl">{occupation}</h2>
+        <div className="mt-4 text-xl">{occupation}</div>
         <div className="mt-2">
           <a
             className="focus:underline hover:underline"
