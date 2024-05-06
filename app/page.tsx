@@ -30,7 +30,13 @@ export default function Home() {
           </a>
         </div>
       </header>
-      <main></main>
+      <main className="max-w-1440 px-4 mx-auto">
+        {sections.map(({ title }) => (
+          <div className="mt-12">
+            <ResumeSection {...{ title }} />
+          </div>
+        ))}
+      </main>
     </>
   );
 }
