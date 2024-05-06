@@ -8,7 +8,6 @@ let resume = {} as Resume;
 
 try {
   resume = yaml.load(fs.readFileSync('./data/resume.yml', 'utf8')) as Resume;
-  console.log(resume);
 } catch (e) {
   console.log(e);
 }
