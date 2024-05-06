@@ -20,7 +20,12 @@ export default function Home() {
         <h1 className="text-4xl sm:text-5xl font-bold">{name}</h1>
         <h2 className="mt-4 text-xl">{occupation}</h2>
         <div className="mt-2">
-          <a className="focus:underline hover:underline" href={`mailto:${email}`}>{email}</a>
+          <a
+            className="focus:underline hover:underline"
+            href={`mailto:${email}`}
+          >
+            {email}
+          </a>
         </div>
       </header>
       <main></main>
