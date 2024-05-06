@@ -2,12 +2,15 @@ name: Raúl Montejo
 occupation: Software Developer
 email: raul@clevelandcoder.com
 sections:
-  - title: Experience
+  - id: experience
+    title: Experience
     jobs:
-      - job_title: Owner, Software Development Contracto
-        company: Cleveland Coder
+      - id: clevelandcoder
+        job_title: Owner, Software Development Contractor
+        company_name: Cleveland Coder
+        description: Independent web development consultancy
         location: Cleveland, OH, USA
-        date: 2014-Present
+        period: 2014-Present
         experiences:
           - >
             Enriched and debugged websites across a diverse range of regional
@@ -33,4 +36,11 @@ sections:
           - >
             Proved adaptability and leadership in team settings, effectively
             contributed to project successes and improved team collaboration.
-  - title: Education
+  - id: education
+    title: Education
+    schools:
+      - id: psu
+        degree: Bachelor of Science, Mathematics
+        grad_date: December 2011
+        institution: Penn State University, The Behrend College
+        location: Erie, PA, USA
