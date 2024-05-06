@@ -2,7 +2,6 @@ import yaml from 'js-yaml';
 import fs from 'fs';
 
 import { Resume } from '../types/resume.interface';
-
 import ResumeSection from '../components/ResumeSection';
 
 let resume = {} as Resume;
@@ -31,9 +30,9 @@ export default function Home() {
         </div>
       </header>
       <main className="max-w-1440 px-4 mx-auto">
-        {sections.map(({ title }) => (
-          <div className="mt-12">
-            <ResumeSection {...{ title }} />
+        {sections.map((section) => (
+          <div key={section.id} className="mt-12">
+            <ResumeSection {...section} />
           </div>
         ))}
       </main>
