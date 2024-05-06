@@ -30,9 +30,7 @@ export default function Home() {
       </header>
       <main className="max-w-1440 px-4 mx-auto">
         {sections.map((section) => (
-          <div key={section.id} className="mt-12">
-            <ResumeSection {...section} />
-          </div>
+          <ResumeSection key={section.id} {...section} />
         ))}
       </main>
     </>
