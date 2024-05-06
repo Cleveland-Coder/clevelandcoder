@@ -1,19 +1,21 @@
 import yaml from 'js-yaml';
 import fs from 'fs';
 
-import { Résumé } from '../types/résumé.interface';
+import { Resume } from '../types/resume.interface';
 
-let résumé = {} as Résumé;
+import ResumeSection from '../components/ResumeSection';
+
+let resume = {} as Resume;
 
 try {
-  résumé = yaml.load(fs.readFileSync('./data/résumé.yml', 'utf8')) as Résumé;
-  console.log(résumé);
+  resume = yaml.load(fs.readFileSync('./data/resume.yml', 'utf8')) as Resume;
+  console.log(resume);
 } catch (e) {
   console.log(e);
 }
 
 export default function Home() {
-  const { email, name, occupation } = résumé;
+  const { email, name, occupation, sections } = resume;
   return (
     <>
       <header className="flex flex-col mt-12 text-center">

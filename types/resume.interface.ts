@@ -1,4 +1,4 @@
-export interface Résumé {
+export interface Resume {
   name: string;
   occupation: string;
   email: string;
