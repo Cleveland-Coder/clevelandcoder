@@ -26,7 +26,7 @@ function ResumeItem({ item }: { item: Job | School }) {
   return (
     <div className="mt-8">
       <MetaList {...item} />
-      <ul className="list-disc list-inside">
+      <ul className="list-disc pl-4">
         {isJob(item) &&
           (item as Job).experiences.map((experience, index) => (
             <li key={index} className="mt-2">
@@ -55,7 +55,10 @@ function MetaList(item: Job | School) {
     <div key={item.id} className="grid gap-x-4 md:grid-cols-4 mt-8">
       <div className="md:col-span-3 font-bold">{getTitle()}</div>
       {metaKeys.map((key, index) => {
-        let className = index % 2 === 0 ? 'md:col-span-1' : 'md:col-span-3';
+        let className =
+          index % 2 === 0
+            ? 'md:col-span-1 md:text-right'
+            : 'md:col-span-3 md:text-left';
         if (index === 0) className += ' font-bold';
         return (
           <div key={key} {...{ className }}>
