@@ -1,13 +1,38 @@
+import yaml from 'js-yaml';
+import fs from 'fs';
+
+import { Resume } from '../types/resume.interface';
+import ResumeSection from '../components/ResumeSection';
+
+let resume = {} as Resume;
+
+try {
+  resume = yaml.load(fs.readFileSync('./data/resume.yml', 'utf8')) as Resume;
+} catch (e) {
+  console.log(e);
+}
+
 export default function Home() {
+  const { email, name, occupation, sections } = resume;
   return (
-    <main>
-      <h1>Ra&#250;l Montejo</h1>
-      <h2>Web Developer</h2>
-      <code>
-        &#60;<span className="tag">portfolio</span>{' '}
-        <span className="attribute">data-upload-time</span>&#61;&#34;
-        <span className="value">right-about-now</span>&#34;&#62;
-      </code>
-    </main>
+    <>
+      <header className="flex flex-col mt-12 text-center">
+        <h1 className="text-4xl sm:text-5xl font-bold">{name}</h1>
+        <div className="mt-4 text-xl">{occupation}</div>
+        <div className="mt-2">
+          <a
+            className="focus:underline hover:underline"
+            href={`mailto:${email}`}
+          >
+            {email}
+          </a>
+        </div>
+      </header>
+      <main className="max-w-[1440px] px-4 mx-auto">
+        {sections.map((section) => (
+          <ResumeSection key={section.id} {...section} />
+        ))}
+      </main>
+    </>
   );
 }

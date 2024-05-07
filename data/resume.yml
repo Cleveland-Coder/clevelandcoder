@@ -1,0 +1,132 @@
+name: Raúl Montejo
+occupation: Software Developer
+email: raul@clevelandcoder.com
+sections:
+  - id: experience
+    title: Experience
+    jobs:
+      - id: clevelandcoder
+        job_title: Owner, Software Development Contractor
+        company_name: Cleveland Coder
+        description: Independent web development consultancy
+        location: Cleveland, OH, USA
+        period: 2014-Present
+        experiences:
+          - >
+            Enriched and debugged websites across a diverse range of regional
+            family businesses, organizations, entrepreneurs, and startups,
+            leveraging HTML, CSS, JavaScript, and React.
+          - >
+            Established and nurtured a comprehensive network of relationships
+            with both local and remote consultancies and consultants, building
+            collaborative opportunities and fostering a community of knowledge
+            sharing.
+          - >
+            Provided strategic direction to businesses and stakeholders in
+            search of cost-effective, innovative solutions to enhance their
+            digital presence and operational efficiency.
+          - >
+            Developed and implemented ad-hoc solutions to address complex web
+            application challenges, demonstrating a keen ability to diagnose and
+             resolve issues effectively.
+          - >
+            Served on teams ranging from 2 to 8 members, representing
+            consultancy expertise or acting as an ad-hoc resource, to deliver
+            targeted solutions across clients' organizational teams.
+          - >
+            Proved adaptability and leadership in team settings, effectively
+            contributed to project successes and improved team collaboration.
+      - id: skiplist
+        job_title: Senior Front-End Developer
+        company_name: SkipList
+        description: Mobile and Web Development Consulting Firm
+        location: Cleveland, OH, USA
+        period: 2019-2020
+        experiences:
+          - >
+            Led front-end development efforts for multiple client projects,
+            bridging design and development to address and resolve client
+            challenges.
+          - >
+            Collaborated closely with UX/UI designers, back-end developers, and
+            project managers to ensure seamless integration of front-end
+            components with overall project architecture.
+          - >
+            Acted as a client liaison for front-end strategy, translating
+            technical concepts into accessible language for stakeholders and
+            gathering feedback to iteratively improve project outcomes.
+          - >
+            Mentored junior developers in front-end technologies and
+            methodologies, fostering a culture of learning and continuous
+            improvement within the team.
+      - id: decent
+        job_title: Senior Software Engineer
+        company_name: Decent Labs
+        description: Blockchain Consulting Firm
+        location: Cleveland, OH, USA
+        period: Spring 2018
+        experiences:
+          - >
+            Authored a white paper that articulated the technical underpinnings
+            and potential applications of a novel blockchain technology,
+            contributing to stakeholder understanding and project buy-in.
+          - >
+            Edited and refined a smart contract, ensuring its security,
+            efficiency, and compliance with the Ethereum blockchain's standards.
+          - >
+            Developed an innovative React application that seamlessly integrated
+            with Ethereum, showcasing the potential for blockchain technologies
+            in real-world applications.
+      - id: caremotion
+        job_title: Lead UI Developer
+        company_name: Care Motion
+        description: >
+          E-commerce Business Specializing in Personal Mobility Devices
+        location: Cleveland, OH, USA
+        period: 2016-2018
+        experiences:
+          - >
+            Led the technical rebuild of the Shopify website, enhancing
+            functionality, user experience, and aesthetic appeal, thereby
+            improving customer engagement and sales.
+          - >
+            Engineered from scratch bespoke marketing tools designed to automate
+            and optimize digital marketing efforts, leading to increased brand
+            visibility and customer acquisition.
+          - >
+            Worked directly with the CEO to brainstorm and conceptualize design
+            improvements for the e-commerce platform, aligning the site's
+            functionality with strategic business objectives.
+          - >
+            Effectively collaborated with a distributed team, fostering a
+            culture of open communication and mutual support, which facilitated
+            the successful implementation of project initiatives.
+      - id: decisiondesk
+        job_title: Software Engineer
+        company_name: Decision Desk
+        description: >
+          Startup providing SaaS product to manage college admissions process
+        location: Cleveland, OH, USA
+        period: 2015-2016
+        experiences:
+          - >
+            Started on the marketing team, enhancing the lead generation website
+            with user experience improvements and analytics tracking.
+          - >
+            Moved to the product team and learned software-building best
+            practices from a team of experts.
+          - >
+            Worked across a stack of Ruby on Rails to Ember.JS, then a migrated
+            stack of Python Django to BackboneJS after a company pivot to revive
+            an older version of the product.
+          - >
+            Served as the sole UI developer by the end of my tenure,
+            contributing to design decisions and front-end architecture.
+  - id: education
+    title: Education
+    schools:
+      - id: psu
+        degree: Bachelor of Science, Mathematics
+        grad_date: December 2011
+        institution: Penn State University, The Behrend College
+        location: Erie, PA, USA
