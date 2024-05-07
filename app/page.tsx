@@ -28,7 +28,7 @@ export default function Home() {
           </a>
         </div>
       </header>
-      <main className="max-w-1440 px-4 mx-auto">
+      <main className="max-w-[1440px] px-4 mx-auto">
         {sections.map((section) => (
           <ResumeSection key={section.id} {...section} />
         ))}
