@@ -4,6 +4,10 @@
 
 /* document styles */
 
+html {
+  @apply sm:text-[18px] md:text-[20px];
+}
+
 body {
   overflow-x: hidden;
   background-color: #131313;
