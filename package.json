@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://clevelandcoder.com",
   "engines": {
-    "node": "20.18.0"
+    "node": "20.x"
   },
   "scripts": {
     "dev": "next dev",
