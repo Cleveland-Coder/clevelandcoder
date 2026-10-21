@@ -12,6 +12,10 @@ updates:
     open-pull-requests-limit: 10
     commit-message:
       prefix: 'chore(deps)'
+    ignore:
+      # Types track the runtime; engines pins node 24.x.
+      - dependency-name: '@types/node'
+        update-types: ['version-update:semver-major']
     groups:
       # next and eslint-config-next are pinned to the same version; bump together.
       nextjs:
