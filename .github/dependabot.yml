@@ -1,0 +1,42 @@
+# Dependabot version + security update PRs.
+# Security updates are enabled in repo settings; this file turns on routine
+# version updates and batches them so the PR queue stays small.
+version: 2
+updates:
+  # pnpm projects use the "npm" ecosystem (Dependabot reads pnpm-lock.yaml).
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+      day: 'monday'
+    open-pull-requests-limit: 10
+    commit-message:
+      prefix: 'chore(deps)'
+    groups:
+      # next and eslint-config-next are pinned to the same version; bump together.
+      nextjs:
+        patterns:
+          - 'next'
+          - 'eslint-config-next'
+      # Everything else non-breaking lands as one weekly PR.
+      minor-and-patch:
+        update-types:
+          - 'minor'
+          - 'patch'
+      # Batch security fixes into one PR instead of one per advisory.
+      security:
+        applies-to: 'security-updates'
+        patterns:
+          - '*'
+
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+      day: 'monday'
+    commit-message:
+      prefix: 'chore(ci)'
+    groups:
+      actions:
+        patterns:
+          - '*'
