@@ -1,4 +1,4 @@
-import yaml from 'js-yaml';
+import { load } from 'js-yaml';
 import fs from 'fs';
 
 import { Resume } from '../types/resume.interface';
@@ -7,7 +7,7 @@ import ResumeSection from '../components/ResumeSection';
 let resume = {} as Resume;
 
 try {
-  resume = yaml.load(fs.readFileSync('./data/resume.yml', 'utf8')) as Resume;
+  resume = load(fs.readFileSync('./data/resume.yml', 'utf8')) as Resume;
 } catch (e) {
   console.log(e);
 }
